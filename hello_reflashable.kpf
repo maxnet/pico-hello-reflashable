@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Komodo Project File - DO NOT EDIT -->
+<project id="858217a2-09fb-4db2-8b04-109191dfb1b7" kpf_version="4" name="hello_reflashable.kpf">
+<preference-set idref="858217a2-09fb-4db2-8b04-109191dfb1b7">
+  <boolean id="import_live">1</boolean>
+</preference-set>
+</project>
