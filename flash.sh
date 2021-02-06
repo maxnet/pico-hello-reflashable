@@ -65,8 +65,18 @@ if [ ! -e "$MOUNTFOLDER" ]; then
 fi    
 
 if [ ! -e "$MOUNTFOLDER" ]; then
-    echo "Failed to mount. $MOUNTFOLDER does not exists."
+    echo "Failed to mount. Mount point $MOUNTFOLDER does not exists."
     exit 1
+fi
+
+if mountpoint "$MOUNTFOLDER"; then
+    echo "Filesystem is mounted"
+else
+    echo "Waiting for filesystem to be mounted"
+    until mountpoint "$MOUNTFOLDER"
+    do
+        sleep 0.1
+    done
 fi
 
 echo "Flashing $UF2FILE"
