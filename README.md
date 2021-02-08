@@ -5,6 +5,16 @@ that allows you to switch to BOOTSEL mode automatically
 by sending a special USB command, without any button presses
 or having to reconnect USB.
 
+## Build dependencies
+
+On Debian:
+
+```
+sudo apt install git build-essential cmake gcc-arm-none-eabi
+```
+
+Your Linux distribution does need to provide a recent CMake (3.13+).
+If not compile CMake from source first.
 
 ## Build instructions
 
