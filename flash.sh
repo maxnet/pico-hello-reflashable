@@ -61,7 +61,7 @@ sleep 0.1
 
 if [ ! -e "$MOUNTFOLDER" ]; then
     echo "Trying to mount"
-    udisksctl mount -b "/dev/disk/by-label/$FSLABEL"
+    udisksctl mount --no-user-interaction -b "/dev/disk/by-label/$FSLABEL"
 fi    
 
 if [ ! -e "$MOUNTFOLDER" ]; then
