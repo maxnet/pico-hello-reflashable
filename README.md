@@ -21,7 +21,8 @@ If not compile CMake from source first.
 ```
 git clone --depth 1 https://github.com/maxnet/pico-hello-reflashable
 cd pico-hello-reflashable
-git submodule update --init --recursive
+git submodule update --init --depth 1
+(cd pico-sdk ; git submodule update --init --depth 1)
 mkdir -p build
 cd build
 cmake ..
