@@ -14,7 +14,7 @@ sudo apt install git build-essential cmake gcc-arm-none-eabi
 ```
 
 Your Linux distribution does need to provide a recent CMake (3.13+).
-If not compile CMake from source first.
+If not, compile [CMake from source](https://cmake.org/download/#latest) first.
 
 ## Build instructions
 
